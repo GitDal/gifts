@@ -6,10 +6,18 @@ export function Snow() {
     const snowRef = useRef(null);
 
     useEffect(() => {
+
+        const requestAnimFrame = window.requestAnimationFrame
+            || (window as any).webkitRequestAnimationFrame
+            || (window as any).mozRequestAnimationFrame
+            || function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+
         const COUNT = 300;
         const ref = snowRef.current as unknown as HTMLDivElement;
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
 
         let width = ref.clientWidth;
         let height = ref.clientHeight;
@@ -23,14 +31,14 @@ export function Snow() {
             canvas.width = width;
             canvas.height = height;
             if (ctx) {
-                ctx.fillStyle = '#FFFFFF';
+                ctx.fillStyle = "#FFFFFF";
             }
 
             var wasActive = active;
             active = width > 600;
 
             if (!wasActive && active) {
-                requestAnimationFrame(update);
+                requestAnimFrame(update);
             }
         }
 
@@ -61,8 +69,8 @@ export function Snow() {
             }
         }
 
-        canvas.style.position = 'absolute';
-        canvas.style.left = canvas.style.top = '0';
+        canvas.style.position = "absolute";
+        canvas.style.left = canvas.style.top = "0";
 
         var snowflakes: Array<any> = [], snowflake;
         for (i = 0; i < COUNT; i++) {
@@ -96,11 +104,11 @@ export function Snow() {
                 }
             }
 
-            requestAnimationFrame(update);
+            requestAnimFrame(update);
         }
 
         onResize();
-        window.addEventListener('resize', onResize, false);
+        window.addEventListener("resize", onResize, false);
         ref.appendChild(canvas);
     }, []);
 

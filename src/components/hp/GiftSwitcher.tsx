@@ -19,13 +19,13 @@ export function GiftSwitcher() {
 
     return (
         <div>
-            <div className={`flex items-center transition-all duration-[400ms] ease-in-out ${visible === "nordsminde" ? "" : "translate-y-[1000px]"}`}>
+            <div className={`flex items-center transition-all duration-[400ms] ease-in-out ${visible === "nordsminde" ? "" : "translate-y-[2000px]"}`}>
                 <Image src={"/reactions/jeppe1.png"} width={100} height={100} alt="reaction" className="absolute z-10 -left-24 -scale-x-100 -animate-wiggle-medium" />
                 <div className="block"><FamilySummerCard /></div>
                 <Image src={"/reactions/signe1.png"} width={100} height={100} alt="reaction" className="absolute z-10 left-full animate-wiggle-medium" />
             </div>
 
-            <div className={`absolute top-0 flex items-center transition-all duration-[400ms] ease-in-out ${visible === "restaurant" ? "" : "translate-y-[1000px]"}`}>
+            <div className={`absolute top-0 flex items-center transition-all duration-[400ms] ease-in-out ${visible === "restaurant" ? "" : "translate-y-[2000px]"}`}>
                 <Image src={"/reactions/jeppe2.png"} width={100} height={100} alt="reaction" className="absolute z-10 -left-24 -scale-x-100 -animate-wiggle-fast" />
                 <div className="block"><FamilyDinnerCard /></div>
                 <Image src={"/reactions/signe2.png"} width={100} height={100} alt="reaction" className="absolute z-10 left-full animate-wiggle-fast" />

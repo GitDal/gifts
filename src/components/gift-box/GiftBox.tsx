@@ -47,7 +47,7 @@ function Box({ open, boxColor, wrapperColor }: BoxProps) {
         <div className={
             `relative w-60 h-52 flex justify-center shadow-2xl
             transition-all ease-in-out duration-500
-            ${open ? "translate-y-[1000px]" : ""}`}
+            ${open ? "translate-y-[2000px]" : ""}`}
             style={{ backgroundColor: boxColor }}
         >
             <div className="w-6 h-full" style={{ backgroundColor: wrapperColor }}>
@@ -69,7 +69,7 @@ function Lid({ hover, open, boxColor, wrapperColor }: LidProps) {
     return (
         <div className={`-mb-8 z-10 flex flex-col-reverse
                         transition-all ease-in-out duration-500
-                        ${open ? "-translate-y-[1000px]" : ""}
+                        ${open ? "-translate-y-[2000px]" : ""}
                         ${(!open && hover) ? "animate-wiggle-medium" : ""}`}>
             <div
                 className="z-20 w-64 h-10 flex justify-center"
