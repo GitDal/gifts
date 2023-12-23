@@ -1,0 +1,8 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "quotes": "warn",
+    "semi": "error",
+    "spaced-comment": "warn"
+  }
+}
