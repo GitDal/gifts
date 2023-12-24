@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
-import { FamilyDinnerCard } from "../gift-cards/FamilyDinnerCard";
-import { useEffect, useState } from "react";
 import { ArrowUturnDownIcon } from "@heroicons/react/16/solid";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { FamilyDinnerCard } from "../gift-cards/FamilyDinnerCard";
 import { FamilySummerCard } from "../gift-cards/FamilySummerCard";
 
 export function GiftSwitcher() {

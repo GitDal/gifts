@@ -24,6 +24,7 @@ const config: Config = {
         //   "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "nogen-restaurant": "url('https://usercontent.one/wp/www.restaurantnoegen.dk/wp-content/uploads/2023/04/Restaurant_Nogen_aftensmad-anretninger.webp')",
         "nordsminde-restaurant": "url('https://www.fiskehusetnorsminde.dk/img/fiskehus.png')",
+        "stamp-card": "url('https://img.freepik.com/premium-photo/old-brown-paper-texture-background_52701-43.jpg')",
       },
       animation: {
         "wiggle-slow": "wiggle 1s ease-in-out infinite",

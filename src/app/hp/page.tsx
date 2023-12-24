@@ -2,7 +2,7 @@ import { GiftBox } from "@/components/gift-box/GiftBox";
 import { GiftSwitcher } from "@/components/hp/GiftSwitcher";
 import { Snow } from "@/components/snow/Snow";
 
-export default function Home() {
+export default function HP() {
     return (
         <main className="flex flex-col justify-center items-center h-screen bg-rose-700 overflow-hidden">
             <Snow />

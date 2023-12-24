@@ -2,8 +2,9 @@ import Link from "next/link";
 
 export function FamilyDinnerCard() {
     return (
-        <div className="w-[750px] h-[500px] relative rounded-md
-                        bg-white bg-nogen-restaurant bg-cover"
+        <div
+            className="w-[750px] h-[500px] relative rounded-md
+                       bg-nogen-restaurant bg-cover"
             style={{ fontFamily: "\"Playfair Display\"" }}>
             <div className="absolute bg-black w-full h-full opacity-65 rounded-md"></div>
             <div className="absolute text-white w-full h-full flex flex-col justify-center items-center">

@@ -3,14 +3,13 @@ import Link from "next/link";
 export function FamilySummerCard() {
     return (
         <div className="w-[750px] h-[500px] relative rounded-md
-                        bg-white bg-nordsminde-restaurant bg-cover">
+                        bg-nordsminde-restaurant bg-cover">
             <div className="absolute bg-black w-full h-full opacity-65 rounded-md"></div>
             <div className="absolute text-white w-full h-full flex flex-col justify-center items-center p-10">
                 <div style={{ fontSize: "56px" }}>Nordsminde</div>
                 <div className="mb-12" style={{ fontSize: "20px" }}>En tur til nostalgiske Nordsminde med tvillingerne</div>
                 <div style={{ fontSize: "20px" }}>En sommmerdag i 2024</div>
                 <div style={{ fontSize: "20px" }}>Inviteres i på mad ved Fiskehuset Norsminde</div>
-                {/* <div className="grow flex justify-center items-center"> */}
                 <Link
                     className="bg-[#688881] hover:bg-[#8fbbb1] active:bg-bg-[#8fbbb1]
                     px-5 py-3 mt-6 text-2xl cursor-pointer"
@@ -18,7 +17,6 @@ export function FamilySummerCard() {
                 >
                     Rute
                 </Link>
-                {/* </div> */}
             </div>
         </div>
     );
