@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 
 export function RestaurantStampCard() {
     return (
@@ -19,7 +19,7 @@ export function RestaurantStampCard() {
 function Stamp({ imgUrl, text, className }: { imgUrl: string; text: string; className?: string; }) {
     return (
         <div className={`${className} border-2 m-4 text-gray-600 border-gray-600 p-2 w-[100px] h-[100px] flex flex-col justify-center items-center`}>
-            <Image src={imgUrl} width={100} height={100} className="h-16 w-auto" alt="stamp" />
+            <img src={imgUrl} className="h-16 w-auto" alt="stamp" />
             <p>{text}</p>
         </div>
     );
